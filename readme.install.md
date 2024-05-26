@@ -91,3 +91,25 @@ Para utilizar SVGs no projeto, foi utilizada a lib `react-native-svg`:
 ```bash
 npx expo install react-native-svg
 ```
+
+### 2.5. React Navigation
+
+Para navegação entre telas, foi utilizada a lib `react-navigation`:
+
+```bash
+npm install @react-navigation/native
+
+npx expo install react-native-screens react-native-safe-area-context
+```
+
+O pacote `react-native-screens` fornece uma maneira nativa de implementar transições e navegação de tela em seu aplicativo. Ele é usado para melhorar o desempenho da navegação em um aplicativo React Native.
+
+O pacote `react-native-safe-area-context` é usado para gerenciar as áreas seguras do dispositivo em seu aplicativo. As áreas seguras são os espaços na tela que não são cobertos por barras de navegação, abas, recortes, entre outros elementos da interface do usuário. Este pacote ajuda a garantir que seu aplicativo seja exibido corretamente em diferentes dispositivos, independentemente de suas áreas seguras específicas.
+
+### 2.6. React Navigation Stack
+
+Para navegação em pilha, foi utilizada a lib `@react-navigation/stack`:
+
+```bash
+npm install @react-navigation/native-stack
+```

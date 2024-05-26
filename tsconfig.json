@@ -11,7 +11,7 @@
       "@screens/*": ["screens/*"],
       "@storage/*": ["storage/*"],
       "@theme/*": ["theme/*"],
-      "@utils/*": ["utils/*"]
+      "@error/*": ["error/*"]
     }
   }
 }
