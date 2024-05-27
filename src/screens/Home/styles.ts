@@ -45,8 +45,7 @@ export const StatisticInfoContainer = styled(View) <StatisticTypeProps>`
   ${({ type, theme }) => css`
     background-color: ${type === 'POSITIVE' ? theme.COLORS.GREEN_LIGHT : theme.COLORS.RED_LIGHT};
   `};
-
-  padding: 24px 0;
+  
   position: relative;
 
   border-radius: 8px;

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components/native";
 
 export const Container = styled.View`
   width: 100%;
+  padding: 24px 0;
 `;
 
 export const Title = styled.Text`
