@@ -7,6 +7,7 @@ import { Loading } from '@components/Loading';
 import { Statistics } from '@screens/Statistics';
 import { StatusBar } from 'react-native';
 import { NewMeal } from '@screens/NewMeal';
+import { Feedback } from '@screens/Feedback';
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontLoaded ? <NewMeal /> : <Loading />}
+      {fontLoaded ? <Feedback /> : <Loading />}
     </ThemeProvider>
   );
 }
