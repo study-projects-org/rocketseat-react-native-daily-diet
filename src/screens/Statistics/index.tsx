@@ -2,10 +2,13 @@ import { StatisticInfo } from "@components/StatisticInfo";
 import { CardGroup, Container, Content, Title } from "./style";
 import { StatisticCard } from "@components/StatisticCard";
 import { NavBar } from "@components/NavBar";
+import { AppStatusBar } from "@components/AppStatusBar";
 
 export function Statistics() {
   return (
     <Container type="POSITIVE">
+
+      {/* <AppStatusBar type="POSITIVE"/> */}
 
       <NavBar type="POSITIVE">
         <StatisticInfo
@@ -17,13 +20,13 @@ export function Statistics() {
         <Title>Estatísticas gerais</Title>
 
         <StatisticCard
-          type="NEUTRAL"
+          type="DEFAULT"
           title="22"
           subtitle="melhor sequência de pratos dentro da dieta"
         />
 
         <StatisticCard
-          type="NEUTRAL"
+          type="DEFAULT"
           title="109"
           subtitle="refeições registradas"
         />

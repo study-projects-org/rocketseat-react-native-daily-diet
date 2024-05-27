@@ -113,3 +113,11 @@ Para navegação em pilha, foi utilizada a lib `@react-navigation/stack`:
 ```bash
 npm install @react-navigation/native-stack
 ```
+
+### 2.7. React Native Mask Text
+
+Para mascarar textos, foi utilizada a lib `react-native-masked-text`:
+
+```bash
+npm install react-native-masked-text
+```

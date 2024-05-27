@@ -1,6 +1,6 @@
 import { css, styled } from "styled-components/native";
 
-export type StatisticCardTypeStyleProps = 'NEUTRAL' | 'POSITIVE' | 'NEGATIVE';
+export type StatisticCardTypeStyleProps = 'DEFAULT' | 'POSITIVE' | 'NEGATIVE';
 
 type StatisticCardTypeProps = {
   type: StatisticCardTypeStyleProps;

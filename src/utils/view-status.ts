@@ -1,2 +1,2 @@
 
-export type ViewStatus = 'NEUTRAL' | 'POSITIVE' | 'NEGATIVE';
+export type ViewStatus = 'DEFAULT' | 'POSITIVE' | 'NEGATIVE';

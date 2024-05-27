@@ -2,7 +2,7 @@ import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import MaterialIcon from '@expo/vector-icons/MaterialIcons';
 
-export type BackButtonTypeStyleProps = 'NEUTRAL' | 'POSITIVE' | 'NEGATIVE';
+export type BackButtonTypeStyleProps = 'DEFAULT' | 'POSITIVE' | 'NEGATIVE';
 
 type BackButtonTypeProps = {
   type: BackButtonTypeStyleProps;
@@ -17,6 +17,6 @@ export const Container = styled(TouchableOpacity)`
 
 export const Icon = styled(MaterialIcon).attrs<BackButtonTypeProps>(({ theme, type }) => ({
   size: 24,
-  color: type === 'NEUTRAL' ? theme.COLORS.GRAY_700 : type === 'POSITIVE' ? theme.COLORS.GREEN_DARK : theme.COLORS.RED_DARK
+  color: type === 'DEFAULT' ? theme.COLORS.GRAY_700 : type === 'POSITIVE' ? theme.COLORS.GREEN_DARK : theme.COLORS.RED_DARK
 }))
 ``;

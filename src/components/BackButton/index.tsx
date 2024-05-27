@@ -5,9 +5,9 @@ type Props = TouchableOpacityProps & {
   type: BackButtonTypeStyleProps
 }
 
-export function BackButton({ type }: Props) {
+export function BackButton({ type, ...rest }: Props) {
   return (
-    <Container>
+    <Container {...rest}>
       <Icon name="arrow-back" type={type} />
     </Container>
   );

@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components/native";
 
 export const Title = styled.Text`
-  flex: 1;
   ${({ theme }) => css`
     font-family: ${theme.FONT_FAMILY.BOLD};
     font-size: ${theme.FONT_SIZE.LG}px;
@@ -10,5 +9,5 @@ export const Title = styled.Text`
 
   text-align: center;
 
-  padding: 24px 0;
+  padding-bottom: 16px;
 `;

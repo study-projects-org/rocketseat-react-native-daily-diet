@@ -6,6 +6,7 @@ import { NunitoSans_400Regular, NunitoSans_700Bold, useFonts } from '@expo-googl
 import { Loading } from '@components/Loading';
 import { Statistics } from '@screens/Statistics';
 import { StatusBar } from 'react-native';
+import { NewMeal } from '@screens/NewMeal';
 
 export default function App() {
 
@@ -21,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontLoaded ? <Statistics /> : <Loading />}
+      {fontLoaded ? <NewMeal /> : <Loading />}
     </ThemeProvider>
   );
 }
