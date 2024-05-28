@@ -9,7 +9,7 @@ type Props = {
   children?: React.ReactNode;
 }
 
-export function NavBar({ type = 'DEFAULT', children }: Props) {
+export function Header({ type = 'DEFAULT', children }: Props) {
   return (
     <Container type={type}>
       <AppStatusBar type={type}/>

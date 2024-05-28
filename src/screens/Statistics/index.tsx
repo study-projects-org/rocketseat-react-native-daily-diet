@@ -1,7 +1,7 @@
 import { StatisticInfo } from "@components/StatisticInfo";
 import { CardGroup, Container, Content, Title } from "./style";
 import { StatisticCard } from "@components/StatisticCard";
-import { NavBar } from "@components/NavBar";
+import { Header } from "@components/Header";
 import { AppStatusBar } from "@components/AppStatusBar";
 
 export function Statistics() {
@@ -10,11 +10,11 @@ export function Statistics() {
 
       {/* <AppStatusBar type="POSITIVE"/> */}
 
-      <NavBar type="POSITIVE">
+      <Header type="POSITIVE">
         <StatisticInfo
           title="90,86%"
         />
-      </NavBar>
+      </Header>
 
       <Content>
         <Title>Estatísticas gerais</Title>

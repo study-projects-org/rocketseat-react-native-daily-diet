@@ -68,8 +68,9 @@ export const Icon = styled(MaterialIcon).attrs<StatisticTypeProps>(({ theme, typ
 
 export const LabelButtonGroup = styled.View`
   width: 100%;
+  flex-direction: column;
   gap: 16px;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 `;
 
 export const Label = styled.Text`

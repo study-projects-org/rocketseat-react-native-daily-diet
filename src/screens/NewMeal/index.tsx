@@ -1,4 +1,4 @@
-import { NavBar } from "@components/NavBar";
+import { Header } from "@components/Header";
 import { ButtonContainer, Container, Form, InputRow, Scroll, SelectContainer, SelectRow } from "./styles";
 import { HeaderTitle } from "@components/HeaderTitle";
 import { InputText } from "@components/InputText";
@@ -10,9 +10,9 @@ import { Button } from "@components/Button";
 export function NewMeal() {
   return (
     <Container>
-      <NavBar type="DEFAULT">
+      <Header type="DEFAULT">
         <HeaderTitle title="Nova refeição" />
-      </NavBar>
+      </Header>
 
       <Scroll
         showsVerticalScrollIndicator={false}

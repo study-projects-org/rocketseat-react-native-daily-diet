@@ -1,13 +1,16 @@
+import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
+import { NunitoSans_400Regular, NunitoSans_700Bold, useFonts } from '@expo-google-fonts/nunito-sans';
 
 import theme from '@theme/index';
+
 import { Home } from '@screens/Home';
-import { NunitoSans_400Regular, NunitoSans_700Bold, useFonts } from '@expo-google-fonts/nunito-sans';
 import { Loading } from '@components/Loading';
 import { Statistics } from '@screens/Statistics';
-import { StatusBar } from 'react-native';
 import { NewMeal } from '@screens/NewMeal';
 import { Feedback } from '@screens/Feedback';
+import { MealDetail } from '@screens/MealDetail';
+import { Popup } from '@components/Popup';
 
 export default function App() {
 
@@ -23,7 +26,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontLoaded ? <Feedback /> : <Loading />}
+      {fontLoaded ? <MealDetail /> : <Loading />}
     </ThemeProvider>
   );
 }

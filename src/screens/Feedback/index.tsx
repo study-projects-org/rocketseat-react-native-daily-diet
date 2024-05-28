@@ -40,7 +40,7 @@ export function Feedback() {
       <Button
         title="Ir para a página inicial"
         onPress={() => { }}
-        isContentWidth
+        widthStyle="CENTERED"
       />
 
     </Container>

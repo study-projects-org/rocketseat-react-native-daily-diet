@@ -6,6 +6,7 @@ import { Button } from "@components/Button";
 import { MealCard } from "@components/MealCard";
 import { SectionList } from "react-native";
 import { ListEmpty } from "@components/ListEmpty";
+import { Popup } from "@components/Popup";
 
 export function Home() {
 
@@ -96,7 +97,7 @@ export function Home() {
 
         <Button
           title="Nova refeição"
-          showIcon
+          icon="add"
         />
       </LabelButtonGroup>
 
@@ -123,7 +124,8 @@ export function Home() {
           />
         )}
       />
-
+    
+    <Popup />
 
     </Container>
   );
