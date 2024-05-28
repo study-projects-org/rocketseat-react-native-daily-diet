@@ -1,4 +1,4 @@
-import { MaskedTextInput } from "react-native-mask-text";
+import { TextInput } from "react-native";
 import styled, { css } from "styled-components/native";
 
 export type InputStyleTypeProps = {
@@ -15,7 +15,7 @@ export const Container = styled.View<InputStyleTypeProps>`
   ${({ isFlex }) => isFlex && 'flex: 1;'}
 `;
 
-export const Input = styled(MaskedTextInput)<InputTextProps>`
+export const Input = styled(TextInput)<InputTextProps>`
   ${({ theme, isFocused }) => css`
     font-family: ${theme.FONT_FAMILY.REGULAR};
     font-size: ${theme.FONT_SIZE.MD}px;

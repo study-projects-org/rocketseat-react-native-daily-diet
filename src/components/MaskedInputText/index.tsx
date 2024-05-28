@@ -1,17 +1,31 @@
 import React, { useState } from "react";
+import { TextInputProps } from "react-native";
 import { useTheme } from "styled-components/native";
 import { Container, Input } from "./style";
 import { Label } from "@components/Label";
-import { MaskedTextInputProps } from "react-native-mask-text";
+import { maskDate, maskTime } from "@utils/masks";
 
-type Props = MaskedTextInputProps & {
+type Props = TextInputProps & {
   label: string;
+  mask: 'date' | 'time';
   isFlex?: boolean;
+  maskedTextChange: (value: string) => void;
 }
 
-export function MaskedInputText({ label, isFlex, ...rest }: Props) {
+export function MaskedInputText({ label, mask, isFlex, maskedTextChange, ...rest }: Props) {
   const { COLORS } = useTheme();
   const [isFocused, setIsFocused] = useState(false);
+
+  function handleChange(text: string) {
+    if (mask === 'date') {
+      const value = maskDate(text)
+      maskedTextChange(value)
+    }
+    if (mask === 'time') {
+      const value = maskTime(text)
+      maskedTextChange(value)
+    }
+  }
 
   return (
     <Container
@@ -26,6 +40,7 @@ export function MaskedInputText({ label, isFlex, ...rest }: Props) {
         isFocused={isFocused}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
+        onChangeText={handleChange}
       />
     </Container>
   );
