@@ -114,10 +114,18 @@ Para navegação em pilha, foi utilizada a lib `@react-navigation/stack`:
 npm install @react-navigation/native-stack
 ```
 
-### 2.7. React Native Mask Text
+### 2.7. React Native UUID
 
-Para mascarar textos, foi utilizada a lib `react-native-masked-text`:
+Para gerar IDs únicos, foi utilizada a lib `react-native-uuid`:
 
 ```bash
-npm install react-native-masked-text
+npm i react-native-uuid
+```
+
+### 2.8. Async Storage
+
+Para armazenamento de dados localmente, foi utilizada a lib `async storage`:
+
+```bash
+npx expo install @react-native-async-storage/async-storage
 ```

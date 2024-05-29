@@ -4,13 +4,8 @@ import { NunitoSans_400Regular, NunitoSans_700Bold, useFonts } from '@expo-googl
 
 import theme from '@theme/index';
 
-import { Home } from '@screens/Home';
 import { Loading } from '@components/Loading';
-import { Statistics } from '@screens/Statistics';
-import { NewMeal } from '@screens/NewMeal';
-import { Feedback } from '@screens/Feedback';
-import { MealDetail } from '@screens/MealDetail';
-import { Popup } from '@components/Popup';
+import { Routes } from '@routes/index';
 
 export default function App() {
 
@@ -26,7 +21,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontLoaded ? <MealDetail /> : <Loading />}
+      {fontLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }

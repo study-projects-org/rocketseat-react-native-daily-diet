@@ -1,4 +1,5 @@
 import { ViewStatus } from "@utils/view-status";
+import { SafeAreaView } from "react-native-safe-area-context";
 import styled, { css } from "styled-components/native";
 
 type MessageStyleTypeProps = Omit<ViewStatus, 'DEFAULT'>;
@@ -7,7 +8,7 @@ export type FeedbackMessageStyleProps = {
   type: MessageStyleTypeProps;
 }
 
-export const Container = styled.View`
+export const Container = styled(SafeAreaView)`
   flex: 1;
   justify-content: center;
   align-items: center;

@@ -1,12 +1,18 @@
 import { Button } from "@components/Button";
 import { ButtonGroup, Container, Content, Title } from "./styles";
 
-export function Popup() {
+type Props = {
+  title: string;
+  onConfirm: () => void;
+  onCancel: () => void;
+};
+
+export function Popup({ title, onConfirm, onCancel }: Props) {
   return (
     <Container>
       <Content>
         <Title>
-          Deseja realmente excluir o registro da refeição?
+          {title}
         </Title>
 
         <ButtonGroup>
@@ -14,10 +20,12 @@ export function Popup() {
             title="Cancelar"
             type="SECONDARY"
             widthStyle="FLEX_GROW"
+            onPress={onCancel}
           />
           <Button
             title="Sim, excluir"
             widthStyle="FLEX_GROW"
+            onPress={onConfirm}
           />
         </ButtonGroup>
       </Content>
